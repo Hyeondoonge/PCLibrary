@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SystemOperator.selectOpWindowController">
+   <children>
+      <Button fx:id="userControl" layoutX="50.0" layoutY="122.0" mnemonicParsing="false" onAction="#userControlBtnHandler" prefHeight="78.0" prefWidth="173.0" text="회원 관리">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Users/sec/Downloads/operator.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="id" layoutX="73.0" layoutY="7.0" prefHeight="61.0" prefWidth="405.0" textFill="#020202">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutY="73.0" prefHeight="0.0" prefWidth="486.0" />
+      <Button fx:id="note" layoutX="272.0" layoutY="122.0" mnemonicParsing="false" onAction="#noteBtnHandler" prefHeight="78.0" prefWidth="173.0" text="공지사항">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="schoolInform" layoutX="157.0" layoutY="241.0" mnemonicParsing="false" onAction="#schoolInformBtnHandler" prefHeight="77.0" prefWidth="173.0" text="학교 정보 조회">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="272.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.extendApplyController">
+   <children>
+      <Label layoutX="52.0" layoutY="43.0" prefHeight="27.0" prefWidth="78.0" text="현재만료날짜" />
+      <DatePicker fx:id="date" layoutX="56.0" layoutY="88.0" prefHeight="27.0" prefWidth="159.0" />
+      <Label fx:id="currentDate" layoutX="142.0" layoutY="49.0" prefHeight="15.0" prefWidth="78.0" text="2020-02-08" />
+      <Button fx:id="apply" layoutX="71.0" layoutY="183.0" mnemonicParsing="false" onAction="#applyBtnHandler" prefHeight="23.0" prefWidth="51.0" text="확인" />
+      <Label fx:id="alarm1" layoutX="66.0" layoutY="115.0" prefHeight="40.0" prefWidth="152.0" text="※ 연장 가능한 최대 일자는" textFill="#ff5959" />
+      <Label fx:id="alarm2" layoutX="41.0" layoutY="135.0" prefHeight="40.0" prefWidth="189.0" text=" 현재만료날짜로부터 2주일입니다" textFill="#ff5959" />
+      <Button fx:id="cancel" layoutX="153.0" layoutY="183.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="51.0" text="취소" onAction="#cancelHandler"/>
+   </children>
+</Pane>

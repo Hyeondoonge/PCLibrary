@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="431.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SystemOperator.SO_searchSchoolTelController">
+   <children>
+      <Label fx:id="school" alignment="TOP_CENTER" layoutX="52.0" layoutY="23.0" prefHeight="37.0" prefWidth="331.0" text="금오공과대학교" textAlignment="CENTER">
+         <font>
+            <Font name="HCR Dotum" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="182.0" text="전화번호" />
+      <Label layoutX="54.0" layoutY="113.0" text="주소" />
+      <Label fx:id="address1" layoutX="99.0" layoutY="111.0" prefHeight="19.0" prefWidth="306.0" text="서울특별시 성북구 안암로 145 (안암동5가, " />
+      <Label fx:id="tel" layoutX="123.0" layoutY="182.0" prefHeight="15.0" prefWidth="161.0" text="Label" />
+      <Label fx:id="address2" layoutX="99.0" layoutY="131.0" prefHeight="19.0" prefWidth="306.0" />
+   </children>
+</Pane>

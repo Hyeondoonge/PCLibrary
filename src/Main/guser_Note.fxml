@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.guser_NoteController">
+   <children>
+      <Label layoutX="341.0" layoutY="23.0" text="공지  사항">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="7.0" layoutY="61.0" prefHeight="494.0" prefWidth="723.0">
+        <columns>
+          <TableColumn fx:id="no" prefWidth="82.0" text="게시번호" />
+          <TableColumn fx:id="title" prefWidth="227.0" text="제목" />
+            <TableColumn fx:id="publisher" minWidth="0.0" prefWidth="132.0" text="게시인" />
+            <TableColumn fx:id="date" prefWidth="146.0" text="게시일" />
+            <TableColumn fx:id="view" prefWidth="135.0" text="조회수" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

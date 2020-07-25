@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SystemOperator.SO_searchSchoolController">
+   <children>
+      <TextField fx:id="schoolInput" layoutX="27.0" layoutY="26.0" prefHeight="31.0" prefWidth="158.0" />
+      <Label layoutX="281.0" layoutY="16.0" prefHeight="22.0" prefWidth="221.0" text="다음과 같이 검색해보세요 !" />
+      <Label layoutX="281.0" layoutY="40.0" prefHeight="15.0" prefWidth="167.0" text="금오공과대학교 → '금오'" textFill="#888787" />
+      <TableView fx:id="table" layoutX="1.0" layoutY="66.0" prefHeight="473.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="school" prefWidth="139.0" text="학교명" />
+          <TableColumn fx:id="address" prefWidth="274.0" text="주소" />
+            <TableColumn fx:id="tel" prefWidth="160.0" text="전화번호" />
+        </columns>
+      </TableView>
+      <Button fx:id="search" layoutX="195.0" layoutY="26.0" mnemonicParsing="false" onAction="#searchBtnHandler" prefHeight="31.0" prefWidth="69.0" text="검색" />
+   </children>
+</Pane>
